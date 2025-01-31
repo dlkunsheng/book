@@ -1,0 +1,90 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: 软件开发
+    chapters:
+    - file: pages/dev/dev
+      sections:
+        - file: pages/dev/dev-env
+    - file: pages/dev/web
+      sections:
+        - file: pages/dev/web-frontend
+  - caption: 架构
+    chapters:
+    - url: https://example.com
+      title: 技术架构
+    - url: https://example.com
+      title: 应用架构
+    - url: https://example.com
+      title: IT架构
+    - url: https://example.com
+      title: 解决方案架构
+    - url: https://example.com
+      title: 企业架构
+  - caption: 软技能
+    chapters:
+    - file: pages/soft/soft-skill
+      sections:
+        - file: pages/soft/meeting
+  - caption: 钻井工艺
+    chapters:
+    - url: https://example.com
+      title: 控压钻井
+    - url: https://example.com
+      title: 固井控井
+    - url: https://example.com
+      title: 液面检测
+    - url: https://example.com
+      title: 风险诊断
+    - url: https://example.com
+      title: 远程支持
+    - url: https://example.com
+      title: 可视化
+  - caption: 储能投资
+    chapters:
+    - url: https://example.com
+      title: 投资测算
+    - url: https://example.com
+      title: 用电监控
+    - url: https://example.com
+      title: 厂房监控
+  - caption: 火山预测
+    chapters:
+    - url: https://example.com
+      title: 火山地震预测
+  - caption: OXMATE
+    chapters:
+    - url: https://example.com
+      title: 智能穿戴
+  - caption: Robot Zeroth
+    chapters:
+    - url: https://example.com
+      title: 机器人
+  - caption: Ava Family
+    chapters:
+    - url: https://example.com
+      title: 智能助理
+  - caption: Smart Edu
+    chapters: 
+    - url: https://example.com
+      title: 超级应用
+  - caption: Light Forge
+    chapters: 
+    - url: https://example.com
+      title: 桌面应用
+  - caption: Insight Forge
+    chapters: 
+    - url: https://example.com
+      title: 可视化应用
+  - caption: Strato Sphere
+    chapters: 
+    - url: https://example.com
+      title: Web应用
+  - caption: Tunnel Connect
+    chapters: 
+    - url: https://example.com
+      title: 开发隧道
+
