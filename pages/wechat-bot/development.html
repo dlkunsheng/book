@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>会议 &#8212; 快速开发手册</title>
+    <title>微信聊天机器人开发 &#8212; 快速开发手册</title>
   
   
   
@@ -60,11 +60,11 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/soft/meeting';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/wechat-bot/development';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="参考架构" href="../architecture/reference-architecture.html" />
-    <link rel="prev" title="软技能" href="soft-skill.html" />
+    <link rel="next" title="Online-Judge" href="../online-judge/project.html" />
+    <link rel="prev" title="会议记录 2" href="../liquid-level-detection/meeting-2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -188,9 +188,9 @@
 <li class="toctree-l1"><a class="reference external" href="https://example.com">企业架构</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">软技能</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="soft-skill.html">软技能</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">会议</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../soft/soft-skill.html">软技能</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../soft/meeting.html">会议</a></li>
 </ul>
 </details></li>
 </ul>
@@ -315,8 +315,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../liquid-level-detection/meeting-2.html">会议记录 2</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">微信聊天机器人</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../wechat-bot/development.html">微信聊天机器人开发</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">微信聊天机器人开发</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">信奥OJ</span></p>
 <ul class="nav bd-sidenav">
@@ -397,7 +397,7 @@
       
       
       
-      <li><a href="https://github.com/dlkunsheng/book/issues/new?title=Issue%20on%20page%20%2Fpages/soft/meeting.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/dlkunsheng/book/issues/new?title=Issue%20on%20page%20%2Fpages/wechat-bot/development.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -427,7 +427,7 @@
       
       
       
-      <li><a href="../../_sources/pages/soft/meeting.md" target="_blank"
+      <li><a href="../../_sources/pages/wechat-bot/development.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -490,9 +490,7 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -503,25 +501,11 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>会议</h1>
+    <h1>微信聊天机器人开发</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rehearsal-vs-try-run">Rehearsal vs. Try Run</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>相同点</strong>：</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3"><strong>不同点</strong>：</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4"><strong>应用场景对比</strong>：</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5"><strong>结合使用</strong>：</a></li>
-</ul>
-</li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -532,113 +516,58 @@
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>会议<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="rehearsal-vs-try-run">
-<h2>Rehearsal vs. Try Run<a class="headerlink" href="#rehearsal-vs-try-run" title="Link to this heading">#</a></h2>
-<p>“Rehearsal”和“Try Run” 都是为了确保活动、演示或会议顺利进行的排练或预演，但它们在细节和应用场景上有所不同。以下是它们的异同分析：</p>
-<hr class="docutils" />
-<section id="id2">
-<h3><strong>相同点</strong>：<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p><strong>目的</strong>：</p>
+<h1>微信聊天机器人开发<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p><img alt="" src="../../_images/wechat-logo.jpg" /></p>
+<p>发布说明：</p>
 <ul class="simple">
-<li><p>都是为了确保正式活动顺利进行，提前发现并解决潜在问题。</p></li>
-<li><p>都包括对内容的熟悉、流程的演练以及技术上的测试。</p></li>
+<li><p>版本0.1 - <strong>完成</strong></p>
+<ul>
+<li><p>通过Wechaty创建聊天机器人</p></li>
+<li><p>获取消息发送给OpenAI并将内容作为微信消息返回</p></li>
+<li><p>控制台应用展示二维码</p></li>
+<li><p>部署到Azure云服务器</p></li>
 </ul>
 </li>
-<li><p><strong>核心活动</strong>：</p>
-<ul class="simple">
-<li><p>模拟正式场景进行完整流程演练。</p></li>
-<li><p>包括时间控制、技术测试和反馈收集。</p></li>
+<li><p>版本0.2 - 未开始</p>
+<ul>
+<li><p>使用TypeScript重写代码</p></li>
+<li><p>直接使用OpenAI类库</p></li>
+<li><p>使用GPT-4模型</p></li>
 </ul>
 </li>
-<li><p><strong>改进方向</strong>：</p>
-<ul class="simple">
-<li><p>二者都强调通过演练发现问题，并在正式场合前优化内容或流程。</p></li>
+<li><p>版本0.3 - 未开始</p>
+<ul>
+<li><p>存储会话内容到数据库</p></li>
 </ul>
 </li>
-</ol>
-</section>
-<hr class="docutils" />
-<section id="id3">
-<h3><strong>不同点</strong>：<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>维度</strong></p></th>
-<th class="head"><p><strong>Rehearsal</strong></p></th>
-<th class="head"><p><strong>Try Run</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>适用场景</strong></p></td>
-<td><p>- 更正式，通常用于大型或高要求活动（如演讲、会议、舞台表演）。- 强调对表现和流程的打磨。</p></td>
-<td><p>- 更倾向于测试性质，常用于技术演示、产品功能验证或会议流程的简单试运行。</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>目的重点</strong></p></td>
-<td><p>- 强调表演或展示的流畅性和效果。- 注重细节完善，特别是语言表达、肢体语言、语气和演讲节奏。</p></td>
-<td><p>- 检查技术、逻辑流程是否正确，确保核心功能正常运作。</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>参与方式</strong></p></td>
-<td><p>- 通常包括完整的正式流程，角色分配清晰，每个人按正式角色参与。- 可模拟观众反馈和互动。</p></td>
-<td><p>- 更像内部测试，参与者可能只聚焦于技术点或某一部分流程。</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>情景还原</strong></p></td>
-<td><p>- 尽量还原正式场景（包括设备、环境和观众行为）。</p></td>
-<td><p>- 可能不完全模拟正式场景，更专注于内容本身的可行性和正确性。</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>反馈重点</strong></p></td>
-<td><p>- 包括内容表达、语言逻辑、语速控制、视觉效果等综合性反馈。</p></td>
-<td><p>- 聚焦技术和逻辑问题，例如数据是否准确、功能是否正常。</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>执行深度</strong></p></td>
-<td><p>- 更深入，通常会进行多次以达到最佳效果。</p></td>
-<td><p>- 通常更轻量，主要是验证功能或基本流程。</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>结果预期</strong></p></td>
-<td><p>- 期望完成后能让整个团队自信上场。</p></td>
-<td><p>- 期望确保一切“可以运行”，没有重大问题。</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<hr class="docutils" />
-<section id="id4">
-<h3><strong>应用场景对比</strong>：<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p><strong>Rehearsal</strong> 更适合：</p>
-<ul class="simple">
-<li><p>演讲、评审会、产品发布会等需要强调展示效果和表达质量的活动。</p></li>
-<li><p>舞台表演或复杂的多团队协作场景。</p></li>
-<li><p>需要情感共鸣或高效沟通的场合。</p></li>
+<li><p>版本0.4 - 未开始</p>
+<ul>
+<li><p>保持会话内容合理裁剪发送给API</p></li>
 </ul>
 </li>
-<li><p><strong>Try Run</strong> 更适合：</p>
+</ul>
+<p>错误调查，原因应该是网络连接问题出现重试时出错：</p>
 <ul class="simple">
-<li><p>技术演示（如代码运行、系统功能测试）。</p></li>
-<li><p>新流程或工具的快速验证（如首次启用的新会议形式）。</p></li>
-<li><p>强调“确保可用性”的轻量演练。</p></li>
+<li><p>第一次运行：21:48 - 10:11</p>
+<ul>
+<li><p>uncaughtException GError: connect ETIMEDOUT 116.128.169.42:443</p></li>
+<li><p>uncaughtException GError: 状态同步超过197.872s未响应，5s后尝试重启</p></li>
 </ul>
 </li>
-</ol>
-</section>
-<hr class="docutils" />
-<section id="id5">
-<h3><strong>结合使用</strong>：<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
-<p>在一些场合下，<strong>try run</strong> 和 <strong>rehearsal</strong> 可以结合使用：</p>
-<ul class="simple">
-<li><p><strong>第一步</strong>：先进行一次 try run，重点测试技术可行性和逻辑流程。</p></li>
-<li><p><strong>第二步</strong>：根据 try run 的结果完善细节，然后进行正式的 rehearsal，关注表达、流程流畅性和观众体验。</p></li>
+<li><p>第二次运行：10:56 - 11:04</p>
+<ul>
+<li><p>uncaughtException GError: not supported friend request message raw payload</p></li>
+<li><p>uncaughtException GError [AxiosError]: timeout of 60000ms exceeded</p></li>
+<li><p>uncaughtException GError: 状态同步超过201.874s未响应，5s后尝试重启</p></li>
 </ul>
-<hr class="docutils" />
-<p>总结来说：</p>
-<ul class="simple">
-<li><p><strong>Try Run</strong> 是“确保能正常运行”的初步测试。</p></li>
-<li><p><strong>Rehearsal</strong> 是“打磨到最佳状态”的正式预演。</p></li>
+</li>
+<li><p>第三次运行：11:12 - (运行2.4小时后出错)</p>
+<ul>
+<li><p>uncaughtException GError: 状态同步超过8637.27s未响应，5s后尝试重启</p></li>
+<li><p>uncaughtException GError [AxiosError]: timeout of 60000ms exceeded</p></li>
 </ul>
-<p>你准备的评审会更适合哪种呢？或者需要结合两者？</p>
-</section>
-</section>
+</li>
+</ul>
 </section>
 
     <script type="text/x-thebe-config">
@@ -654,7 +583,7 @@
         },
         kernelOptions: {
             name: "python3",
-            path: "./pages\soft"
+            path: "./pages\wechat-bot"
         },
         predefinedOutput: true
     }
@@ -672,20 +601,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="soft-skill.html"
+       href="../liquid-level-detection/meeting-2.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">软技能</p>
+        <p class="prev-next-title">会议记录 2</p>
       </div>
     </a>
     <a class="right-next"
-       href="../architecture/reference-architecture.html"
+       href="../online-judge/project.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">参考架构</p>
+        <p class="prev-next-title">Online-Judge</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -695,28 +624,6 @@
             </div>
             
             
-              
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rehearsal-vs-try-run">Rehearsal vs. Try Run</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>相同点</strong>：</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3"><strong>不同点</strong>：</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4"><strong>应用场景对比</strong>：</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5"><strong>结合使用</strong>：</a></li>
-</ul>
-</li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
